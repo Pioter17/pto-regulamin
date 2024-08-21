@@ -1,21 +1,29 @@
 <template>
   <v-app id="inspire" style="background-color: antiquewhite">
-    <v-app-bar dense class="d-flex align-center justify-center pa-6">
-      <v-container class="d-flex align-center justify-center" style="gap: 20px">
-        <a href="/store">
-          <img
-            style="width: 120px; height: 120px"
-            src="https://emojings.com/wp-content/uploads/2020/03/1-5-12.png"
-            alt=""
-          />
-        </a>
-        <h1>Polskie Towarzystwo O</h1>
-        <NuxtLink class="nav__button" to="/terms">Regulamin</NuxtLink>
-        <NuxtLink class="nav__button" to="/policy"
-          >Polityka prywatności</NuxtLink
-        >
-        <v-select :items="langs" v-model="value"></v-select>
-      </v-container>
+    <v-app-bar
+      dense
+      class="d-flex align-center justify-center pr-16"
+      height="200"
+    >
+      <div class="top__bar" style="gap: 20px">
+        <div class="first">
+          <a href="/store">
+            <img class="icon" src="../assets/images/emoji.png" alt="" />
+          </a>
+          <h1>Polskie Towarzystwo O</h1>
+        </div>
+        <div class="second">
+          <NuxtLink class="nav__button" to="/terms">
+            {{ $t("terms") }}</NuxtLink
+          >
+          <NuxtLink class="nav__button" to="/policy">
+            {{ $t("policy.title") }}</NuxtLink
+          >
+          <div class="select__wrapper">
+            <v-select :items="langs" v-model="value" variant="solo"></v-select>
+          </div>
+        </div>
+      </div>
     </v-app-bar>
 
     <v-container>
@@ -25,14 +33,87 @@
 </template>
 
 <script setup>
+import { watch } from "vue";
+const { locale, setLocale } = useI18n();
 const langs = ref(["pl", "en"]);
-const value = ref("pl");
+const value = ref("en");
+
+watch(value, (newValue) => {
+  setLocale(newValue);
+});
 </script>
 
-<style>
+<style scoped>
+.select__wrapper {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.top__bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+header {
+  padding-right: 0;
+}
+
+.v-app-bar {
+  padding-right: 0;
+}
+
+.first {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  /* font-size: 16px; */
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.second {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
 .nav__button {
   background-color: rgb(233, 225, 220);
-  font-size: 20px;
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   line-height: 20px;
   font-weight: 600;
   border-radius: 16px;
@@ -43,6 +124,13 @@ const value = ref("pl");
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+    width: 150px;
+    height: 65px;
+    padding: 10px;
+  }
 }
 
 .nav__button:hover {

@@ -1,0 +1,16 @@
+{
+  "terms": "Terms",
+  "policy": {
+    "title": "Privacy policy",
+    "1": "This document contains information about the privacy policies applied to mobile applications issued by Vectio sp. z o.o. (hereinafter referred to as \"Vectio Privacy Policy\").",
+    "2": "Applications created by Vectio (referred to as \"Applications\") can be installed on mobile devices such as smartphones or tablets, after being downloaded by users from Google Play (for Android), Apple App Store (for iOS), or Microsoft Store (for Windows Phone).",
+    "3": "To use the Applications, it is necessary to have a mobile device with the Android, iOS, or Windows Phone operating system installed, and access to the Internet, which can be provided by a data plan or Wi-Fi connection. Using the Applications does not require users to provide any personal data.",
+    "4": "Vectio Applications do not collect or store any information that could allow the identification of the user by third parties.",
+    "5": "If you do not agree with the terms of the Vectio Privacy Policy, please do not install the Applications or uninstall them. Definitive removal of the Applications from the device means ceasing to use them.",
+    "6": "Vectio Privacy Policy is a supplementary document to the privacy policies available in the Google Play, Apple App Store, and Microsoft Store application stores. Vectio is not responsible for the privacy policies conducted by these platforms or for their compliance with applicable data protection laws, such as the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 (GDPR), the Act on Personal Data Protection of 10 May 2018, or the Act on Rendering Electronic Services of 18 July 2002.",
+    "7": "If you have any questions or need clarification, please contact us via email: "
+  },
+  "mail": "kontakt@vectio.pl.",
+  "downloadTitle": "Download our application from googlePlay or from the appStore to your phone!",
+  "download": "Download the app on your phone!"
+}

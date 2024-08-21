@@ -2,23 +2,41 @@
   <div style="display: flex; flex-direction: column; align-items: center">
     <div class="title__panel" style="">
       <div class="gradient"></div>
-      <h1 class="title">Regulamin</h1>
+      <h1 class="title">
+        {{ $t("downloadTitle") }}
+      </h1>
     </div>
     <div class="store">
-      <a href="https://play.google.com/store/apps/details?id=com.easytech.wc3&hl=pl">
-        <img src="/assets/images/google-store.png" class="store__link" alt="Google store link">
+      <p>
+        {{ $t("download") }}
+      </p>
+      <div class="images">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.easytech.wc3&hl=pl"
+          target="_blank"
+        >
+          <img
+            src="/assets/images/google-store.png"
+            class="store__link"
+            alt="Google store link"
+          />
         </a>
-        <a href="">
-
-          <img src="/assets/images/apple-store.png" class="store__link" alt="Apple store link">
-          </a>
+        <a
+          href="https://apps.apple.com/pl/story/id1498472756?itscg=10000&itsct="
+          target="_blank"
+        >
+          <img
+            src="/assets/images/apple-store.png"
+            class="store__link"
+            alt="Apple store link"
+          />
+        </a>
+      </div>
     </div>
-    </div>
+  </div>
 </template>
 
-<script>
-export default {};
-</script>
+<script setup></script>
 
 <style scoped>
 .title__panel {
@@ -26,9 +44,9 @@ export default {};
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  width: 1500px;
+  width: 100%;
   height: 500px;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -45,16 +63,37 @@ export default {};
 .store {
   background-color: white;
   border-radius: 20px;
-  width: 1500px;
-  height: 200px;
+  width: 100%;
   font-size: 20px;
-  padding: 10px;
-  padding-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+  }
 }
 
 .store__link {
-  height: 150px;
+  height: 80px;
   width: auto;
+
+  @media (min-width: 450px) {
+    height: 100px;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 }
 
 h3 {
@@ -64,9 +103,26 @@ h3 {
 .title {
   color: #fff;
   position: relative;
-  top: 400px;
-  left: 50px;
-  font-size: 50px;
+  margin: 20px;
+  top: 200px;
+
+  @media (min-width: 600px) {
+    top: 300px;
+  }
+
+  @media (min-width: 1300px) {
+    left: 10px;
+    top: 300px;
+    font-size: 50px;
+  }
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+
+  @media (min-width: 800px) {
+    text-align: left;
+  }
 }
 </style>
-

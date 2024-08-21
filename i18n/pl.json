@@ -1,0 +1,16 @@
+{
+  "terms": "Regulamin",
+  "policy": {
+    "title": "Polityka prywatności",
+    "1": "Ten dokument zawiera informacje o zasadach dotyczących prywatności, które są stosowane w aplikacjach mobilnych wydawanych przez firmę Vectio sp. z o.o. (zwane dalej „Zasady Prywatności Vectio”).",
+    "2": "Aplikacje stworzone przez Vectio (określane jako \"Aplikacje\") mogą być instalowane na urządzeniach mobilnych, takich jak smartfony czy tablety, po wcześniejszym pobraniu ich przez użytkowników z Google Play (dla Androida), Apple App Store (dla iOS) lub Microsoft Store (dla Windows Phone).",
+    "3": "Aby korzystać z Aplikacji, niezbędne jest posiadanie urządzenia mobilnego z zainstalowanym systemem operacyjnym Android, iOS lub Windows Phone oraz dostępu do Internetu, który może być zapewniony przez pakiet danych lub połączenie Wi-Fi. Używanie Aplikacji nie wymaga od użytkowników podawania żadnych danych osobistych.",
+    "4": "Aplikacje Vectio nie gromadzą i nie przechowują żadnych informacji, które mogłyby pozwolić na identyfikację użytkownika przez osoby trzecie.",
+    "5": "Jeżeli nie zgadzasz się z warunkami Zasad Prywatności Vectio, prosimy o nieinstalowanie Aplikacji lub ich deinstalację. Definitywne usunięcie Aplikacji z urządzenia oznacza zaprzestanie z nich korzystać.",
+    "6": "Zasady Prywatności Vectio są dokumentem uzupełniającym do polityk prywatności dostępnych w sklepach aplikacji Google Play, Apple App Store i Microsoft Store. Vectio nie jest odpowiedzialne za polityki prywatności prowadzone przez te platformy ani za ich zgodność z obowiązującymi przepisami prawa dotyczącymi ochrony danych osobowych, takimi jak Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. (RODO), ustawa o ochronie danych osobowych z dnia 10 maja 2018 r., czy ustawa o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r.",
+    "7": "W przypadku pytań lub potrzeby wyjaśnień, zachęcamy do kontaktu przez adres e-mail: "
+  },
+  "mail": "kontakt@vectio.pl.",
+  "downloadTitle": "Pobierz naszą aplikację z googlePlay lub z appStore na swój telefon!",
+  "download": "Pobierz aplikację na swój telefon!"
+}

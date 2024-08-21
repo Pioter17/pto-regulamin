@@ -2,7 +2,9 @@
   <div style="display: flex; flex-direction: column; align-items: center">
     <div class="title__panel" style="">
       <div class="gradient"></div>
-      <h1 class="title">Regulamin</h1>
+      <h1 class="title">
+        {{ $t("terms") }}
+      </h1>
     </div>
     <div class="terms">
       <h3>§ 1. Przedmiot Regulaminu</h3>
@@ -373,9 +375,7 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
+<script setup></script>
 
 <style scoped>
 .title__panel {
@@ -383,9 +383,9 @@ export default {};
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  width: 1500px;
+  width: 100%;
   height: 500px;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -402,10 +402,15 @@ export default {};
 .terms {
   background-color: white;
   border-radius: 20px;
-  width: 1500px;
-  font-size: 20px;
-  padding: 10px;
   padding-bottom: 20px;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+
+  @media (min-width: 800px) {
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 h3 {
