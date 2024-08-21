@@ -45,8 +45,9 @@
   background-position: center;
   border-radius: 20px;
   width: 100%;
-  height: 500px;
-  margin-top: 200px;
+  max-width: 1200px;
+  height: 400px;
+  margin-top: 100px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -64,6 +65,7 @@
   background-color: white;
   border-radius: 20px;
   width: 100%;
+  max-width: 1200px;
   font-size: 20px;
   padding: 20px;
   display: flex;
@@ -104,15 +106,15 @@ h3 {
   color: #fff;
   position: relative;
   margin: 20px;
-  top: 200px;
+  top: 100px;
 
   @media (min-width: 600px) {
-    top: 300px;
+    top: 200px;
   }
 
   @media (min-width: 1300px) {
     left: 10px;
-    top: 300px;
+    top: 200px;
     font-size: 50px;
   }
 }

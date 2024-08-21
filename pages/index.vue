@@ -46,8 +46,9 @@
   background-position: center;
   border-radius: 20px;
   width: 100%;
-  height: 500px;
-  margin-top: 200px;
+  max-width: 1200px;
+  height: 400px;
+  margin-top: 100px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -55,12 +56,13 @@
   background-color: #fff;
   border-radius: 20px;
   width: 100%;
+  max-width: 1200px;
   font-size: 16px;
   padding: 30px;
 
   @media (min-width: 800px) {
     padding: 50px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -81,7 +83,7 @@ ol {
 .title {
   color: #fff;
   position: relative;
-  top: 400px;
+  top: 300px;
   left: 50px;
   font-size: 50px;
 }

@@ -384,8 +384,9 @@
   background-position: center;
   border-radius: 20px;
   width: 100%;
-  height: 500px;
-  margin-top: 200px;
+  max-width: 1200px;
+  height: 400px;
+  margin-top: 100px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -404,12 +405,13 @@
   border-radius: 20px;
   padding-bottom: 20px;
   width: 100%;
+  max-width: 1200px;
   padding: 5px;
   font-size: 16px;
 
   @media (min-width: 800px) {
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -425,7 +427,7 @@ p {
 .title {
   color: #fff;
   position: relative;
-  top: 400px;
+  top: 300px;
   left: 50px;
   font-size: 50px;
 }

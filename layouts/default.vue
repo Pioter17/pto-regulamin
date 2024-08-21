@@ -3,7 +3,7 @@
     <v-app-bar
       dense
       class="d-flex align-center justify-center pr-16"
-      height="200"
+      height="100"
     >
       <div class="top__bar" style="gap: 20px">
         <div class="first">
@@ -16,11 +16,16 @@
           <NuxtLink class="nav__button" to="/terms">
             {{ $t("terms") }}</NuxtLink
           >
-          <NuxtLink class="nav__button" to="/policy">
+          <NuxtLink class="nav__button" to="/">
             {{ $t("policy.title") }}</NuxtLink
           >
           <div class="select__wrapper">
-            <v-select :items="langs" v-model="value" variant="solo"></v-select>
+            <v-select
+              :items="langs"
+              hide-details
+              v-model="value"
+              variant="solo"
+            ></v-select>
           </div>
         </div>
       </div>
@@ -36,7 +41,7 @@
 import { watch } from "vue";
 const { locale, setLocale } = useI18n();
 const langs = ref(["pl", "en"]);
-const value = ref("en");
+const value = ref("pl");
 
 watch(value, (newValue) => {
   setLocale(newValue);
@@ -77,10 +82,10 @@ header {
   justify-content: center;
   gap: 20px;
   align-items: center;
-  /* font-size: 16px; */
 
   @media (min-width: 1000px) {
     width: 50%;
+    max-width: 500px;
   }
 }
 
@@ -97,6 +102,7 @@ h1 {
 
   @media (min-width: 1000px) {
     width: 50%;
+    max-width: 500px;
   }
 }
 
@@ -107,9 +113,9 @@ h1 {
 
 .nav__button {
   background-color: rgb(233, 225, 220);
-  font-size: 16px;
-  width: 130px;
-  height: 50px;
+  font-size: 14px;
+  width: 110px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,9 +132,9 @@ h1 {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (min-width: 600px) {
-    font-size: 20px;
-    width: 150px;
-    height: 65px;
+    font-size: 18px;
+    width: 130px;
+    height: 50px;
     padding: 10px;
   }
 }
@@ -139,5 +145,9 @@ h1 {
   background-color: rgb(69, 65, 62);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
     rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.v-input__details {
+  grid-area: auto;
 }
 </style>
